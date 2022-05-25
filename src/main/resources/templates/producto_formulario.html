@@ -41,7 +41,7 @@
 				 	<label class="col-form-label col-sm-4">Categoria: </label>
 				 	<div class="col-sm-8">
 				 		<select th:field="*{categoria}" class="form-control" required>
-				 			<th:block th:each="categoria : ${listarCategorias}">
+				 			<th:block th:each="categoria : ${listaCategorias}">
 				 				<option th:text="${categoria.nombre}" th:value="${categoria.id}"></option>
 				 			</th:block>
 				 		</select>
